@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input Data</h1>
+    <p>Hasil : <b></b></p>
+    <form>
+        <input type="text"><br>
+        <small>Preview</small><br>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        let form = document.querySelector('form')
+        let data = document.querySelector('input')
+
+        data.addEventListener('input', () => {
+            document.querySelector('small').innerHTML = data.value
+        })
+
+        form.addEventListener('submit', (coba) => {
+            coba.preventDefault()
+            document.querySelector('b').innerHTML = data.value
+        })
+
+    </script>
+
+    <!-- <h1>Hallo</h1>
+    <button class="btn">click</button>
+    <button onclick="tes()">click</button>
+
+
+    <script>
+        // event
+        // 1. Event Handler
+        // let tes = () => {
+        //     let a =  parseInt(prompt("nilai 1"))
+        //     let b =  parseInt(prompt("nilai 2"))
+        //     alert(a + " + "+ b +" = "+ (a+b))
+        // }
+
+        // 2. addEventListener
+        // let tombol = document.querySelector(".btn")
+        // let judul = document.querySelector("h1")
+        
+        // tombol.addEventListener('click', function(){
+        //     judul.classList.toggle("tes")
+        // })
+
+        // 3. on
+        // let tombol = document.querySelector(".btn")
+        
+        // let tes = () => {
+        //     let a =  parseInt(prompt("nilai 1"))
+        //     let b =  parseInt(prompt("nilai 2"))
+        //     alert(a + " + "+ b +" = "+ (a+b))
+        // }
+
+        // tombol.onclick = tes
+
+        // innerHTML
+        // let content = document.querySelector('#root')
+
+        // content.innerHTML = '<h1>Hallo Dunia</h1>'
+        // content.innerText = 'tes'
+
+        // Manipulasi Class
+        // let judul = document.querySelector('h1')
+
+        // add
+        // judul.classList.add("tes")
+        // remove
+        // judul.classList.remove("tes")
+        // toggle
+        // judul.classList.toggle("tes")
+        // contains
+        // console.log(judul.classList.contains('tes'));
+
+        // DOM
+        // Document Object Model
+
+        // Hirarki
+        // Root
+        // Parent > child = sibling
+
+        // let judul = document.querySelector('h1')
+        // let judul = document.querySelector('.NamaClass')
+        // let judul = document.querySelector('#NamaID')
+        // let judul = document.querySelectorAll('h1')
+        // let judul = document.querySelectorAll('.NamaClass')
+
+        // console.log(judul);
+        // judul[0].style.fontSize = "90px"
+        // judul[1].style.color = "grey"
+
+        // let list = document.querySelectorAll('li')
+
+        // console.log(list);
+    </script> -->
+</body>
+</html>

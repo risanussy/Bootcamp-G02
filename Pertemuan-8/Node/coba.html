@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba</title>
+</head>
+<body>
+    <h1>todo list</h1>
+    <form>
+        <input id="todo" type="text" placeholder="masukan diisni..."><br>
+        <small><i>preview</i></small><br><br>
+        <button>Ok</button>
+    </form>
+    <hr>
+    <ol>
+    </ol>
+    <script>
+        let todo = []
+        let index = 0
+        let hasil = document.querySelector('#todo')
+        let list = document.querySelector('ol')
+        let preview = document.querySelector('i')
+        let form = document.querySelector('form')
+        // let hasil = document.getElementById("todo")
+
+        let coba = (e) => {
+            e.preventDefault()
+
+            let iniHTMLnya = '<li class=\"list-' 
+                + index + 
+                '\">'
+                + hasil.value + 
+                ' - <button onclick=\"apus('
+                + index + 
+                ')\">hapus</button><button onclick=\"edit('
+                + index +
+                ')\">edit</button></li>'
+
+            todo.push(iniHTMLnya)
+            index++
+            hasil.value = ""
+            list.innerHTML = todo.join('')
+        }
+        
+        let apus = (e) => {
+            document.querySelector(".list-"+e).remove()
+        }
+
+        let edit = (e) => {
+            alert("ok")
+        }
+
+        form.addEventListener("submit", coba)
+        hasil.addEventListener("input", () => {
+            preview.innerHTML = hasil.value
+        })
+    </script>
+</body>
+</html>

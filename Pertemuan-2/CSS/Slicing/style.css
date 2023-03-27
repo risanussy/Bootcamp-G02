@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: #EFEFEF;
+}
+
+.navbar {
+    /* dimensi kotak */
+    /* Satuan yang akan dipakai adalah PX adalah pixel */
+    width: 100%;
+    background-color: #355C64;
+    padding: 20px;
+}
+
+.nav-line {
+    display: inline-block;  
+    color: white;
+}
+
+.nav-list {
+    margin-left: 25px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    width: 60%;
+    height: 450px;
+    /* background-color: white; */
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    float: right;
+    padding: 60px;
+}
+
+.brand {
+    color: white;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+
+.judul {
+    text-align: center;
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    background-color: #162E36;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-left: 25%;
+}
+
+
+/* element langsung nama element */
+/* class pakai titk didepannya . */
+/* id pakai pagar/hastag/crash didepannya # */
+
+/* inline = 1000 */
+/* id = 100 */
+/* class = 10 */
+/* element = 1 */
+
+/* #gtau {
+    color: red;
+}
+
+.ppp {
+    color: purple;
+}
+
+p {
+    color: green;
+} */
+
+/* 
+setiap element itu punya default style display 
+ada 2 jenis default display
+
+display : inline;
+display: block;
+
+*/

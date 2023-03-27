@@ -1,0 +1,15 @@
+coba tuliskan 5 tag html yang memiliki display inline dan 5 tag lagi yang memiliki display block?
+
+tag dengan display inline
+1.
+2.
+3.
+4.
+5.
+
+tag dengan display block
+1.
+2.
+3.
+4.
+5.
